@@ -10,4 +10,4 @@ A simple React app that pulls the top 20 stories from Hacker News and displays t
 
 ## Demo
 
-Demo can be seen at [Hacker News Top Stories](https://github.com/daniel-schroeder-dev/hacker-news-top-stories)
+Demo can be seen at [Hacker News Top Stories](https://daniel-schroeder-dev.github.io/hacker-news-top-stories)
