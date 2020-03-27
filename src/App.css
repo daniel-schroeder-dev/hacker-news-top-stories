@@ -11,6 +11,28 @@
   align-items: center;
 }
 
+
 html {
   background-color: #f9f9f9;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+.app__articles-container {
+  opacity: 0;
+  transition: opacity .5s ease-in;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    width: 300px;
+    line-height: 40px;
+  }
 }

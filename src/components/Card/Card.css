@@ -2,12 +2,13 @@
   width: 100%;
   box-shadow: -2px -1px 29px -12px rgba(0,0,0,0.75);
   background-color: #fff;
-  padding: 24px 24px 24px 64px;
+  padding: 32px 32px 32px 64px;
   border-radius: 5px;
-  margin: 24px 0;
+  margin: 32px 0;
   list-style-type: none;
   position: relative;
   font-size: 16px;
+  line-height: 25px;
 }
 
 .card__article-title-link {
@@ -35,6 +36,10 @@
   color: #fffff4;
 }
 
+.card:nth-child(n+10):nth-child(-n+20) .card__item-number__number {
+  transform: translate(12px, 10px);
+}
+
 .card__article-title-author {
   color: #444;
   font-weight: bold;
@@ -43,4 +48,21 @@
 
 .card__article-title-by {
   font-size: 12px;
+}
+
+@media (max-width: 550px) {
+
+  .card {
+    padding: 24px 24px 24px 48px;
+    margin: 38px 0;
+  }
+
+  .card__article-title-link {
+    font-size: 16px;
+  }
+
+  .card__article-title-author {
+    font-size: 14px;
+  }
+
 }

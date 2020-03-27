@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import LoadingIcon from './components/LoadingIcon/LoadingIcon';
 import Card from './components/Card/Card';
 
 import './App.css';
@@ -24,22 +25,25 @@ function App() {
     return data;
   };
 
-  const chill = foo => setTimeout(() => { foo(false) }, 3000);
-
   useEffect(() => {
     fetchData()
       .then(articles => {
         setTimeout(() => {
           setArticles(articles);
           setIsLoading(false);
-        }, 1000);
+        }, 2000);
       });
   }, []);
 
   return (
     <main className="app">
-    {isLoading && "Loading..."}
-    {articles.length ? articles.map((article, i) => (<Card key={article.id} by={article.by} title={article.title} number={i + 1} url={article.url} />)) : null}     
+      { isLoading && <LoadingIcon /> }
+      <div className="app__articles-container" style={{
+        opacity: isLoading ? 0 : 1,
+      }} >
+      <h1>Top 20 Articles from Hacker News</h1>
+      {articles.length ? articles.map((article, i) => (<Card key={article.id} by={article.by} title={article.title} number={i + 1} url={article.url} />)) : null}
+      </div>
     </main>
   );
 }
