@@ -8,3 +8,6 @@ A simple React app that pulls the top 20 stories from Hacker News and displays t
 - Use of CSS Animations for `LoadingIcon` component's 'bounce' effect.
 - Async/await and Promise.all() to perform multiple `fetch()` requests to the Hacker News API.
 
+## Demo
+
+Demo can be seen at [Hacker News Top Stories](https://github.com/daniel-schroeder-dev/hacker-news-top-stories)
