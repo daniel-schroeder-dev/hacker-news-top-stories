@@ -1,0 +1,46 @@
+.card {
+  width: 100%;
+  box-shadow: -2px -1px 29px -12px rgba(0,0,0,0.75);
+  background-color: #fff;
+  padding: 24px 64px;
+  border-radius: 5px;
+  margin: 24px 0;
+  list-style-type: none;
+  position: relative;
+  font-size: 16px;
+}
+
+.card__article-title-link {
+  text-decoration: none;
+  color:  #3C99DC;
+  font-size: 18px;
+}
+
+.card__item-number {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  background-color: rgba(102, 211, 250, 0.75);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 200px 200px 10px 200px;
+}
+
+.card__item-number__number {
+  display: inline-block;
+  transform: translate(18px, 10px);
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  color: #fffff4;
+}
+
+.card__article-title-author {
+  color: #444;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card__article-title-by {
+  font-size: 12px;
+}
